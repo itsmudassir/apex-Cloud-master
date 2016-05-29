@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:materialdesign="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            tools:context=".MainActivity"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:weightSum="1">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HOME"
+                    android:id="@+id/button"
+                    android:layout_weight="0.6"
+                    android:textColor="#fafafa"
+                    android:background="#3c8dbc" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MAPS"
+                    android:id="@+id/button2"
+                    android:layout_weight="0.4"
+                    android:textColor="#fafafa"
+                    android:background="#5987a1"
+                    android:visibility="gone"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HISTORY"
+                    android:id="@+id/button3"
+                    android:layout_weight="0.4"
+                    android:textColor="#fafafa"
+                    android:background="#3c8dbc"
+                    android:visibility="gone"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cloud"
+                    android:id="@+id/buttonx"
+                    android:layout_weight="0.6"
+                    android:textColor="#fafafa"
+                    android:background="#3c8dbc" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:layout_weight="0.20"
+                android:gravity="center"></LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="290dp">
+                <fragment
+                    android:id="@+id/map"
+                    android:name="com.google.android.gms.maps.MapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:layout_weight="0.20"
+                android:gravity="center"></LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:layout_weight="0.20"
+                android:gravity="center"
+                android:weightSum="1"
+                android:paddingBottom="7dp">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="UPDATE Map"
+                    android:id="@+id/button4"
+                    android:visibility="gone" />
+
+                <Button
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:text="New Button"
+                    android:id="@+id/button5"
+                    android:visibility="gone" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Set Day"
+                    android:id="@+id/button6"
+                    android:layout_weight="0.22"
+                    android:background="#5987a1"
+                    android:textColor="#fafafa" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:layout_weight="0.20"
+                android:gravity="center"
+                android:weightSum="1">
+
+
+            </LinearLayout>
+        </LinearLayout></ScrollView>
+
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>

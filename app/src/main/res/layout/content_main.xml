@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scrollView"
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillViewport="false">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="25dp">
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="31dp">
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="25dp">
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="31dp">
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="312dp"
+            android:id="@+id/hhhyy">
+
+            <org.eazegraph.lib.charts.PieChart
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/piechart"
+                android:layout_width="match_parent"
+                android:layout_height="299dp"
+
+                android:padding="10dp"
+                app:egLegendTextSize="0dp"
+
+                app:egValueTextSize="40sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:id="@+id/Stand"
+                android:src="@drawable/ic_record_walk" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:id="@+id/Walk"
+                android:src="@drawable/ic_record_running" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:id="@+id/Run"
+                android:src="@drawable/ic_record_up" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:id="@+id/Sitt"
+                android:src="@drawable/ic_record_down" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:id="@+id/Down"
+                android:src="@drawable/ic_record_counsel" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:paddingRight="10dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Walking"
+                android:id="@+id/StandText"
+                android:textSize="8dp"
+                android:textStyle="normal"
+                android:enabled="true"
+                android:paddingRight="10dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Running"
+                android:id="@+id/WalkText"
+                android:textSize="8dp"
+                android:textIsSelectable="false"
+                android:textStyle="normal"
+                android:paddingLeft="15dp"
+                android:paddingRight="20dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upstairs"
+                android:id="@+id/RunText"
+                android:textSize="8dp"
+                android:textStyle="normal"
+                android:paddingRight="10dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Downstairs"
+                android:id="@+id/SittText"
+                android:textSize="8dp"
+                android:textStyle="normal" /><![CDATA[
+            " />
+
+            ]]>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Idle"
+                android:id="@+id/DownText"
+                android:textSize="8dp"
+                android:textStyle="normal"
+                android:paddingLeft="20dp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/t2"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                android:paddingRight="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/t3"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:gravity="left|center"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:id="@+id/imageView"
+                android:src="@drawable/ic_new_walking" />
+            <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                android:id="@+id/progress_1"
+                android:layout_height="37dp"
+                android:layout_width="180dp"
+                backgroundPadding="5dp"
+
+
+                android:layout_weight="0.41" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Walking"
+                android:id="@+id/textView2"
+                android:textColor="#f1252020"
+                android:paddingLeft="20dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:gravity="left|center"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:id="@+id/imageView2"
+                android:src="@drawable/ic_new_running" />
+            <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                android:id="@+id/progress_2"
+                android:layout_height="37dp"
+                android:layout_width="175dp"
+                backgroundPadding="5dp"
+
+
+                android:layout_weight="0.48" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Running"
+                android:id="@+id/textView3"
+                android:textColor="#f1252020"
+                android:paddingLeft="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:gravity="left|center"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:id="@+id/imageView3"
+                android:src="@drawable/ic_stairsup" />
+            <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                android:id="@+id/progress_3"
+                android:layout_height="37dp"
+                android:layout_width="180dp"
+                backgroundPadding="5dp"
+
+
+                android:layout_weight="0.45" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/textView4"
+                android:textColor="#f1252020"
+                android:paddingLeft="20dp"
+                android:text="Upstairs" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:gravity="left|center"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:id="@+id/imageView4"
+                android:src="@drawable/ic_stairdown" />
+            <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                android:id="@+id/progress_4"
+                android:layout_height="37dp"
+                android:layout_width="172dp"
+                backgroundPadding="5dp"
+
+
+                android:layout_weight="0.78"
+                android:orientation="horizontal" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Downstairs"
+                android:id="@+id/textView5"
+                android:textColor="#f1252020"
+                android:paddingLeft="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:gravity="left|center"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:id="@+id/imageView8"
+                android:src="@drawable/ic_counseling" />
+            <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                android:id="@+id/progress_7"
+                android:layout_height="37dp"
+                android:layout_width="187dp"
+                backgroundPadding="5dp"
+
+
+                android:layout_weight="0.28" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Idle"
+                android:id="@+id/textView8"
+                android:textColor="#f1252020"
+                android:paddingLeft="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:weightSum="1">
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>
